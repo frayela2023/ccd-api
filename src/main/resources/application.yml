@@ -1,0 +1,28 @@
+spring:
+  application: 
+    name: ccd ## compute cost deliveryy
+
+  datasource:
+    url: jdbc:h2:mem:test
+    username: sa
+    password:
+    driver-class: org.h2.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update  
+
+parcel:
+  exceeds: 50 # Kg
+  heavy: 10 # Kg 
+  small: 1500 # centimeters cubed
+  medium: 2500 # centimeters cubed
+  cost:
+    heavy: 20
+    small: 0.03
+    medium: 0.04
+    large: 0.05
+      
+      
+
